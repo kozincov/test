@@ -6,8 +6,17 @@ import Post from './Post/Post';
 
 const MyPosts = () => {
   return (
-    <div className={classes.posts}>
-      <Post />
+    <div>
+      My Posts
+      <div>
+        <textarea></textarea>
+        <button>Add post</button>
+        <button>Remove</button>
+      </div>
+      <div className={classes.posts}>
+        <Post message='A B O B A' count='15'/>
+        <Post message="It's my first post." count='23'/>
+      </div>
     </div>
   );
 }

@@ -2,19 +2,15 @@
 import React from 'react';
 import classes from './Post.module.css';
 
-const Post = () => {
+const Post = (props) => {
   return (
-    <div>
-      My Posts
-      <div>
-        <textarea></textarea>
-        <button>Add post</button>
-        <button>Remove</button>
-      </div>
+
     <div className={classes.item}>
-      <img src = 'https://avatars.githubusercontent.com/u/32821146?v=4'></img>
-      post 1
-    </div>
+      <img src='https://avatars.githubusercontent.com/u/32821146?v=4'></img>
+      {props.message}
+      <div>
+        <span>{props.count}</span>
+      </div>
     </div>
   );
 }
